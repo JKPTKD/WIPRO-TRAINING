@@ -1,0 +1,88 @@
+running the command:
+
+--------------------
+
+	wordCount.py -w or --word  filename.txt 
+
+		33	 filename.txt
+
+	wordCount.py -c or --char  filename.txt 
+
+		221 filename.txt
+
+	wordCount.py -l or --lines  filename.txt 
+
+		7	filename.txt
+
+	wordCount.py filename.txt 
+
+		7  33 221 filename.txt
+
+	wordCount.py -lwc filename.txt 
+
+		7  33 221 filename.txt
+
+	wordCount.py --lines --word --char filename.txt 
+
+		7  33 221 filename.txt
+
+=====================================================
+
+subprocess	--> Module can be used to run commands and capture outputs ...
+
+	Intro to this:
+ 
+Write a code called:
+
+	wordCount.py 
+
+		--> countWords()
+
+		--> countCharacters()
+
+		--> countLines()
+ 
+running the command:
+
+--------------------
+
+	wordCount.py -w or --word  filename.txt 
+
+		33	 filename.txt
+
+	wordCount.py -c or --char  filename.txt 
+
+		221 filename.txt
+
+	wordCount.py -l or --lines  filename.txt 
+
+		7	filename.txt
+
+	wordCount.py filename.txt 
+
+		7  33 221 filename.txt
+
+	wordCount.py -lwc filename.txt 
+
+		7  33 221 filename.txt
+
+	wordCount.py --lines --word --char filename.txt 
+
+		7  33 221 filename.txt
+
+=====================================================
+
+subprocess	--> Module can be used to run commands and capture outputs ...
+
+	Intro to this:
+
+=========================================================
+
+Provide:
+
+	unit testing  --> testing individual functions
+
+	functional testing --> running command along with commandline args to capturing the output and comparing the same.
+
+======================================================	
+ 
