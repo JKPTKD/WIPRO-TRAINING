@@ -1,0 +1,177 @@
+Day 4:
+------
+
+Topics for Today:
+-----------------
+	pass, break, continue, else Keywords associated with loops 
+	Data structures in Python
+		List, Tuple, Dictionary, Set (Accessing, Updating, Slicing)
+		Understanding lists, tuples, dictionaries, and sets
+		Adding and Deleting Elements
+		Working with For Loops
+			using in keyword
+		Strings in Python
+
+In traditional languagues:		
+-------------------------
+	for (conditions here)
+	{
+		if (cond)
+		{
+		
+		}
+	}
+
+in Python:
+	We dont use brackets.
+	If i want to use empty loops like infinite condition or some delay.
+	Traditionally in languagues we use the following syntax.
+		for (;;) ;
+		
+		or 
+		
+		for (i=0; i< 100000; ++i){
+			for (j = 0; j < 1000; ++j){
+			
+			}
+		}
+		
+		
+				
+		
+		for (; ; )
+		{
+		
+		}
+		
+	in Python we use pass keyword/statement, which is to say do nothing.
+	
+	for _ in range(100000):
+		for _ in range(1000):
+			pass 
+	
+	cnt = 0	
+	while cnt < 1000;
+		cnt++
+=================================================== 
+break --> to break/come out of your corrent loop.
+
+continue is used to skip the statements below continue for the current iteration
+=======================================================
+Data structures in Python:
+--------------------------
+	C --> Create (new elements are added)
+	R --> Read (Read from existing data)
+	U --> Update (read/fetch and update/modify it)
+	D --> Delete (removing the specific data)
+	-----------------------------------------
+	Variable that we did discuss can store one value. If you want to store collection of data/ multiple data's in your program memory so that your program(instruction) can perform operations on that data.
+	
+	data structure ==> structured data or organized data so that any operations on data (individually or group) can be performed in an optimized manner/way (efficiently).
+	-------------------------------------------------------
+	var = list(data)
+		or 
+	var = [ data collection]
+	-----------------------------------------------------
+1.  accept first number from user and store 100 
+    consecutive values into a list.
+    Enter a num: 100
+    100 101 102 103 104 105 ... 199
+
+2. update the above list where non-prime numbers are assigned to zero and then print the list.
+	0 101 0 103 0 0 0 107 0 
+	
+3. 	[0, 101, 0, 103, 0, 0 ,0 ,107, 0, 109, 0, 0, 0, 113, 0 , 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 127, 0, ... 197, 0, 199]
+
+	13 zeroes between 113 and 127 
+
+	Maximum count of consecutive zeroes between which numbers has to printed as the output given above.
+	
+	
+List is a mutable,  (where you can change elements inside the data structure) allows duplicates.
+
+Commonly used methods on list are:
+---------------------------------
+lst = [] 
+lst.append(val) --> adding val at the end 
+lst.insert(pos, val)--> inserts val at the position pos
+lst.extend(lstTwo) --> add elements from lstTwo 
+
+lst.remove(val) --> Removes first occurrence of val	 
+lst.pop([pos]) --> Removes and returns value at pos (default: last element)
+
+lst.index(val) --> returns first index of val
+lst.count(val) --> returns count of val 
+lst.sort() --> sorts list inplace
+lst.reverse() --> reverses list in place 
+resLst =  lst.copy() ==> returns a shallow copy
+lst.clear()  -->  removes all elements 
+-------------------------------------------------------
+What is shallow copy?
+	From the context of a list. 
+	A shallow copy creates a new list object(with new address), but the elements inside it are references to the same object as in the original list.
+	
+	So 
+		1. if you modify the original list, the shallow copy is not affected.
+		2. if you modify the mutable elements inside the list , both original and shallow copy reflects the change.
+		
+	
+lst = [10 ,20, 30 , 40, 50]
+---> Equivalent to say we have one dimensional data 
+
+Problems:
+1. ['January', 'February', 'March', ... 'December']
+2. In addition to the previos problem(month name), [31, 28, 31, 30, 31, 30, 31, 31,30, 31, 30, 31]
+
+ 
+3. Here items and price you can choose yours. 
+	lst = [['Jim Jam Pops', 35.7],['Bourbon', 23.3],['Krack Jack', 15.00],['Dark Fantasy', 12.0],['Five Star', 20.0]]
+	quantity ==> [4, 2, 6, 5, 3]
+
+	1.   name#1    12.45   4    48.80    
+
+					Total sum : 
+----------------------------------------------------
+4. Create a matrix of row X col:  3 4
+	1  2  3  4
+	5  6  7  8
+	9  10 11 12
+	
+[[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+====================================================
+5. Create a matrix of row X col:  3 4
+	1  2  3  4
+	5  6  7  8
+	9  10 11 12
+	print the elements in a spiral order.	
+	output: 1 2 3 4 8 12 11 10 9 5 6 7
+6. Problem:
+	Zero Matrix (Set Rows & Columns to Zero)
+	If an element is 0 in a matrix, set its entire row and column to 0.
+	Sample #1:
+		matrix = [
+			[1, 2, 3],
+			[4, 0, 6],
+			[7, 8, 9]
+		]
+	Output:		
+		[
+			[1, 0, 3],
+			[0, 0, 0],
+			[7, 0, 9]
+		]
+
+Presentation for Today:
+-----------------------
+1. Ambika Bhargava
+2. Shikha S 
+3. Asima Nayak
+4. Abhigyan Maji
+5. Swetapriti Pradhan
+6. Ankit Pant 
+
+
+
+
+
+

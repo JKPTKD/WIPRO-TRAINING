@@ -1,0 +1,239 @@
+Day 1:
+------
+	Python Language Fundamentals
+		Setting up python evironment
+		Data types
+		operators
+	
+	Python I/O Expressions
+		input()
+		print()
+		
+	Python Control Statements	
+		conditional 
+		looping / iterative 
+=======================================================
+Sudhakar Palanivelu
+=======================================================
+Environment Setup for Python
+	Installing Python
+	Setting up IDE
+---------------------------------
+Accessing Cloud Lab:
+--------------------	
+	https://cloud4.rpsconsulting.in/console/#
+
+	username:
+	password:
+
+
+	Using VSCode:
+	-------------
+===========================================================
+Who wish to install locally:
+----------------------------
+	https://www.python.org/
+==============================================
+What is a program?
+	Set of instructions to perform a task.
+	
+What is programming?
+	Writing programs to get a job or task done by your computer.
+	
+Programming Languages?
+	any Language used to write programs 
+	C, C++, Java, Python, Perl, Go, JavaScript, VBScript
+
+What is the usage of these programming languages?
+	Helps us to create software applications/ apps, compilers, operating systems etc.,
+
+	The instructions or programs that are written can be compiled or interpreted.
+
+========================================================
+The executable files are pretty much specific to the platform (here platform is your OS).
+	so programs that are compiled for specific platform have their limitations.
+	
+Interpreters once installed...	
+	scripting languages are usually interpreted.
+
+	run line by line at the time of interpretation
+	
+	examples:
+		sh, bash, ksh, csh, --> different shells in UNIX/Linux 
+		perl, python ---> platform
+		vbscript, javascript, PHP-->
+		
+	Modern python:
+		It provides vast modules to support multiple hardware architecture as well as multiple platforms.
+		
+		Your python can be installed.
+		
+	Programming Language:
+		C Language
+	Scripting Language
+		python
+============================================================
+Data types 
+----------
+	var = value 
+	
+	var = 10 #integer 
+	var = 13.345 #float
+
+Strings in python:
+==================
+	var = 'Some string here' #single quote 
+	var = "Some string here" # double quote
+	var = '''Some         #Triple quote
+		string here 
+		one multiple lines '''
+		
+	var = """Some 	#Triple quote
+		string here 
+		one multiple lines """
+
+Note:
+-----
+	variables are identifiers(names) given to a location (memory/ address) to store values(data).
+	
+	if you want to know these locations use id(var) in print statements. 
+	
+	Integers:
+	---------
+		Integers are whole numbers which is represented in decimal format.
+		
+		If you want to interpret in different format we can use methods/functions or pre-fixes like 0x, 0b, 0o for hexa-decimal, binary and octal representation while assigning values to a variable.
+		
+	Python supports large/big numbers. Unlike C, C++/Java where data types represent their memory size along with the range of values supported.
+
+	short or short int --> 16 bits or 2 Bytes --> 
+	
+	00000000 00000000 ---> 0000 0000 0000 0000 --> 0
+	00000000 00000001 ---> 0000 0000 0000 0001 --> 1
+	.										   --> 2	
+	.
+	.										   --> 65,534	
+	11111111 11111111 ---> 1111 1111 1111 1111 --> 65,535
+	
+	
+	65536 -->
+	1 0000 0000 0000 0000 0000 0000 0000 0000
+	
+	000  --> 0
+	001	 --> 1
+	010  --> 2
+	011  --> 3
+	
+	100  --> 4
+	101  --> 5
+	110  --> 6
+	111  --> 7
+	----
+  1 000
+
+
+
+
+	
+var = 10
+
+Decimal:		
+	0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ,10 ,11	
+Octal:
+	0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12
+Hexa:
+	0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, 10, 11
+Binary:
+	0, 1, 10, 11, 100, 101, 110, 111, 1000, 1001, 1010,1011, 1100, 1101, 1110, 1111, 10000, 10001, 10010, 10011, 10100, 10101, 10110, 10111, 11000, 11001, 11010, 11011 
+
+Hexa decimal:
+-------------
+    Hexa --> Binary --> 
+	0x0 ---> 0000
+	0x1 ---> 0001
+	0x11 --> 0001 0001
+	0x1a --> 0001 1010 --> 1 1010 --> 11010
+	
+	0x22 --> 0010 0010
+	
+	0x1a --> 01 1010 --> 011010 -->011 010 --> 3 2 --> 0o32 --> octal with bits grouped by 3 bits 
+
+strings :
+---------
+	f'strings' --> format strings 
+	r'strings' --> raw strings 
+	b'strings' --> binary string
+Boolean:
+-------
+	True, False
+==========================================================
+Operators: 
+	Arithmetic -->
+		+, -, *, / , % , //, **
+		/  --> true division
+		// --> integral division 
+		** --> Power of 
+		
+		2 ** 5 --> 2 to the power of 5 --> 32
+	+, -, *, // , % --> 
+
+type casting:
+=============
+	int(str, base)
+	'12345' --> string value ['1', '2', '3', '4', '5']
+	
+	base 10:         dig    res (res * base + dig)     res
+		'1' - '0' --> 1 -->  0 * 10 + 1 			--> 1
+		'2' - '0' --> 2 -->  1 * 10 + 2 			--> 12 
+		.
+		.
+		.
+		final result ==> 12345
+	base 8:
+	base 5:
+	
+	float()
+	str()
+===============================================
+
+relational/comparison Operators 
+--------------------------------
+	<, >, <=, >=, ==, !=
+	
+
+Conditional statement: 
+---------------------
+	syntax:
+	-------
+		'true' if cond else 'false'
+	
+	in C/C++/Java 
+		(cond) ? "True" : "False"
+		
+		
+	Problem #2:
+	-----------
+		Apply the conditions using the conditional operator/statement and adjust the formula to get correct output.
+		
+Arithmetic
+comparison, 
+
+
+For Tomorrow:
+------------
+logical
+	and 
+	or 
+	not
+	
+	'within Range' if 20 < 30 and 20 > 10 else 'outside Range'
+	
+bitwise operators		
+	
+	https://github.com/sudhakarp1/Wipro3July2025
+	
+
+
+
+
+
